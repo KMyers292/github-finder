@@ -1,17 +1,18 @@
 //===================================================================================================================================================================//
-//                                                                               index.js                                                                            //
+//                                                                         Alert Reducer                                                                             //
 //===================================================================================================================================================================//
 
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+const alertReducer = (state, action) => {
+    switch(action.type) {
+        case 'SET_ALERT':
+            return action.payload;
+        case 'REMOVE_ALERT':
+            return null;
+        default:
+            return state;
+    }
+};
 
 //===================================================================================================================================================================//
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+export default alertReducer;
