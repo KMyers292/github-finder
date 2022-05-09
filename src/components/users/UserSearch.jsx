@@ -49,7 +49,7 @@ const UserSearch = () => {
                         <div className="relative">
                             <input type="text" 
                                    className="w-full pr-40 bg-gray-200 input input-lg text-black" 
-                                   placeholder='Search' 
+                                   placeholder='Search For User...' 
                                    value={text} 
                                    onChange={handleChange} 
                             />
